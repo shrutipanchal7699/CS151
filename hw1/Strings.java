@@ -46,11 +46,8 @@ public class Strings
           { 
               char x = str.charAt(i);
                if(index[(int)x] != strLen)
-               {
-                distinctletters += x;
-               }
-          }
-              
+                 distinctletters += x;
+          }        
     return distinctletters;
    }
 }
