@@ -1,53 +1,40 @@
 
 public class Strings
 {
-   static final int no_chars = 256;
+   static final int no_chars = 256; 
      public static String uniqueLetters(String str)
    {
-      // length of the string
-      int strLen = str.length(); 
-      
-      //keeps track of the count of individual character
-      int[] countOfChar = new int[no_chars]; 
-      
-     //stores index value of character 
-      int[] index = new int[no_chars]; 
-       
-        // Initialize counts of all characters and  
-        // indexes of distinct characters. 
+      int[] countOfChar = new int[no_chars];  //count of individual letters
+      int[] index = new int[no_chars];      //index of letters 
+             
         for (int i = 0; i < no_chars; i++) 
         { 
-            countOfChar[i] = 0; 
-            index[i] = strLen; // A value more than any  
-                          // index in str[] 
+            countOfChar[i] = 0; // Initial count of all letters  
+            index[i] = str.length();  // indexes of distinct characters.
         } 
-       
-        // Traverse the input string 
-        for (int i = 0; i < strLen; i++) 
+      
+        for (int i = 0; i < str.length(); i++) 
         { 
-           //increases the current count of character
-            char x = str.charAt(i); 
-            ++countOfChar[x]; 
+           char x = str.charAt(i); 
+            ++countOfChar[x]; //increases the current count of letter
        
-            // If this is first occurrence, then set  
-            // value in index as index of it. 
             if (countOfChar[x] == 1 && x !=' ') 
                 index[x] = i; 
        
-            // If character repeats, then remove it  
-            // from index[] 
+            // repetition more than once    
             if (countOfChar[x] >= 2) 
-                index[x] = strLen; 
+                index[x] = str.length(); 
         } 
        
       String distinctletters ="";
-      
-        for (int i = 0; i < strLen ;i++) 
+         
+      // storing uniqueletters only
+        for (int i = 0; i < str.length() ;i++) 
           { 
               char x = str.charAt(i);
-               if(index[(int)x] != strLen)
-                 distinctletters += x;
-          }        
-    return distinctletters;
+               if(index[(int)x] != str.length())
+                distinctletters += x;
+          }
+     return distinctletters;
    }
 }
