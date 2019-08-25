@@ -1,0 +1,12 @@
+Your name: Shruti Panchal
+Your student ID:012433135
+Your major: Software Enginerring
+Your preferred email address: shrutipanchal.76@gmail.com / shruti.panchal@sjsu.edu
+Check one: [X] Undergraduate, [ ] Graduate, [ ] Open university 
+Repeating the class? [ ] Yes, [X] No
+Place and semester where you took a programming course in Java: SJSU , Fall 2017, Spring 2018
+Course number and grade received: CS 46 A : A, CS 46B : C+
+Place and semester where you took a course in data structures: SJSU, Spring 2019
+Course number and grade received: CS 146 : C+
+Time it took you to answer the two questions below: 3-4 hours
+Did you ask anyone for help? [X] Yes, [ ] No
