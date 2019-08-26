@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class Encoding
@@ -8,16 +9,18 @@ public class Encoding
       if(m==0 && n==0)
        result.add("");
     
-      else if (m==0 && n>=0)
+      else if (m==0 && n>0)
       {
          for (String str : morseCodes(m,n-1))
         	  result.add(str+"-");
+      
       }
-      else if (m>=0 && n==0 )
+      else if (m>0 && n==0 )
       {
     	  for (String str : morseCodes(m-1,n))
     	   result.add(str+".");
       }
+      
       else
       {
     	  for (String str : morseCodes(m-1,n))
@@ -29,6 +32,7 @@ public class Encoding
         	  result.add(str+"-");
           }
       }
-     return result;
+      
+      return result;
    }
 }
