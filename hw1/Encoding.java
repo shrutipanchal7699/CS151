@@ -11,28 +11,22 @@ public class Encoding
     
       else if (m==0 && n>0)
       {
-         for (String str : morseCodes(m,n-1))
-        	  result.add(str+"-");
-      
-      }
+         for (String code : morseCodes(m,n-1))
+        	  result.add(code+"-");
+            }
       else if (m>0 && n==0 )
       {
-    	  for (String str : morseCodes(m-1,n))
-    	   result.add(str+".");
+    	  for (String code : morseCodes(m-1,n))
+    	   result.add(code+".");
       }
-      
       else
       {
-    	  for (String str : morseCodes(m-1,n))
-          {
-        	  result.add(str+".");
-          }
-          for (String str : morseCodes(m,n-1))
-          {
-        	  result.add(str+"-");
-          }
-      }
-      
-      return result;
+    	  for (String code : morseCodes(m,n-1))
+         	  result.add(code+"-");
+         
+    	  for (String code : morseCodes(m-1,n))
+        	  result.add(code+".");
+                       }
+            return result;
    }
 }
