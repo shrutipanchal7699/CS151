@@ -1,0 +1,42 @@
+import javax.swing.*;
+
+public class IconTester
+{
+   public static void main(String[] args)
+   {
+      JOptionPane.showMessageDialog(
+            null, 
+            "",
+            "Message",
+            JOptionPane.INFORMATION_MESSAGE,
+            new MarsIcon(50));
+      System.exit(0);
+      
+      buttonRed.addActionListener(new ActionListener() {
+	   public void actionPerformed(ActionEvent e) {
+	   color = Color.RED;
+	   label.repaint();
+	   }
+	   });
+
+	   buttonBlue.addActionListener(new ActionListener() {
+	   public void actionPerformed(ActionEvent e) {
+	   color = Color.BLUE;
+	   label.repaint();
+	   }
+	   });
+
+	   buttonGreen.addActionListener(new ActionListener() {
+	   public void actionPerformed(ActionEvent e) {
+	   color = Color.GREEN;
+	   label.repaint();
+	   }
+	   });
+
+	   return panel;
+      
+      
+   }
+   
+   
+}
