@@ -20,7 +20,6 @@ public class Car_ZoomInNOut {
 				frame.setSize(new Dimension(300 , 300));
 			}
 			carLabel.repaint();
-			// Re-enables zoomOut
 			if ( car.getIconWidth() <= 150 ) {
 				zoomIn.setEnabled(true);
 				}
@@ -46,7 +45,6 @@ public class Car_ZoomInNOut {
 
 		frame.pack();
 		frame.setPreferredSize(new Dimension(200, 200));
-		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
 }
