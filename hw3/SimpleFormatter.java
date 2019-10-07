@@ -14,7 +14,7 @@ public class SimpleFormatter implements InvoiceFormatter
    {
       total += item.getPrice()*item.getQuantity();
       return (String.format(
-            "%s: $%.2f\n",item.toString()+" X"+item.getQuantity(),item.getPrice()));
+            "%s: $%.2f\n",item.toString()+" X "+item.getQuantity(),item.getPrice()));
    }
 
    public String formatFooter()
