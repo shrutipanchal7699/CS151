@@ -5,8 +5,8 @@ public class HTMLFormatter implements InvoiceFormatter
 	public String formatHeader()
    {
 		total = 0;
-	     // return "     I N V O I C E\n\n\n";
-		return "<html><body><p>Hi How are u</p></body></html>";
+	      return "     I N V O I C E\n\n\n";
+		//return "<html><body><p>Hi How are u</p></body></html>";
    }
 
    public String formatLineItem(LineItem item)
