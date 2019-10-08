@@ -11,10 +11,11 @@ public class InvoiceTester
    public static void main(String[] args)
    {
       final Invoice invoice = new Invoice();
-      final InvoiceFormatter formatter = new SimpleFormatter();
+      final InvoiceFormatter formatter = new HTMLFormatter();
 
       // This text area will contain the formatted invoice
-      final JTextArea textArea = new JTextArea(20, 40);
+      final JTextPane textArea = new JTextPane();
+      textArea.setContentType("text/html");
 
       // When the invoice changes, update the text area
       ChangeListener listener = new
@@ -51,7 +52,7 @@ public class InvoiceTester
          });
 
       // Put the combo box and the add button into a panel
-      JPanel panel = new JPanel();
+      JPanel panel = new JPanel(); 
       panel.add(combo);
       panel.add(addButton);
 
@@ -61,7 +62,7 @@ public class InvoiceTester
          BorderLayout.CENTER);
       frame.add(panel, BorderLayout.SOUTH);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      frame.pack();
+      frame.setSize(500,500);
       frame.setVisible(true);
    }
 }
