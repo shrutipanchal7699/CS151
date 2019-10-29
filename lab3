@@ -31,6 +31,11 @@ public class ArraysPractice {
 		Object[] array2 =new Object[] {"Summer", 2.0 , new Rectangle(0,0)};
 		dumpArray(array2);
 		
+		Object[] array3 =new Object[] {1,2.97,13.00,5,0};
+		dumpArray(array3);
+		
+		Object[] array4 =new Object[] {"Hello", "Namaste"};
+		dumpArray(array4);
 			
 		
 	}
