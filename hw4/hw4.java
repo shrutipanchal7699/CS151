@@ -25,9 +25,7 @@ public class hw4{
 	  Thread t4 = new Thread(depositRunnable2);
 	  t3.start();
 	  t4.start();
-	  
-	  
-	  
+	 
   }
   
 	  
